@@ -5,7 +5,10 @@ nav {
     height: 50px;
     background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
 }
-
+.link {
+    text-decoration: none;
+    color: #f1f1f1;
+}
 .list {
     list-style-type: none;
     background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
@@ -17,11 +20,13 @@ nav {
     
 }
 .items {
-    margin-right: 20px;
+    margin: 10px;
+    padding: 10px;
     font-size: 20px;
     text-transform: uppercase;
     color: #f1f1f1;
     cursor: pointer;
+    
 }
 
 .btn {
@@ -35,7 +40,11 @@ nav {
     border: none;
     margin: auto;
 }
-
+.link:hover, .link:active, .active {
+    color: #95bcf0;
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid #95bcf0;
+  }
 
 @media screen and (max-width: 500px){
 
