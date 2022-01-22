@@ -11,11 +11,14 @@ const Home = () => {
         return (
             <Card
                 key={movie.id}
+                id={movie.id}
                 title={movie.title}
                 year={movie.year}
                 runtime={movie.runtime}
                 genres={movie.genres}
                 director={movie.director}
+                actors={movie.actors}
+                plot={movie.plot}
                 image={movie.posterUrl}
             />
         )
