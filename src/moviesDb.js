@@ -1,4 +1,4 @@
-export const molieList = {
+ const movieList = {
     "genres": [
         "Comedy",
         "Fantasy",
@@ -2151,3 +2151,4 @@ export const molieList = {
         }
     ]
 }
+export default movieList

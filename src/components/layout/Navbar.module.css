@@ -26,6 +26,10 @@ nav {
     text-transform: uppercase;
     color: #f1f1f1;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
