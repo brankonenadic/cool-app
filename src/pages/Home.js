@@ -4,16 +4,18 @@ import classes from './Home.module.css';
 import movieList from '../moviesDb'
 
 const Home = () => {
-    const { genres, movies } = movieList;
+    const { movies } = movieList;
 
 
     const theMovie = movies.map((movie) => {
         return (
             <Card
                 key={movie.id}
-                id={movie.id}
                 title={movie.title}
                 year={movie.year}
+                runtime={movie.runtime}
+                genres={movie.genres}
+                director={movie.director}
                 image={movie.posterUrl}
             />
         )

@@ -1,13 +1,20 @@
 import React from 'react';
 import classes from './Card.module.css'
 
-const Card = ({ id, title, year, image }) => {
+const Card = ({ title, year, image , runtime , genres , director }) => {
+
+
+
     return (
         <div className={classes.cardItem}>
             <div className={classes.image} style={{ backgroundImage: `url(${image})` }}></div>
-            <div> {id}</div>
-            <h2> {title}</h2>
-            <p>{year}</p>
+            <div className={classes.infoDiv}>
+                <h3> {title}</h3>
+                <p>{year}</p>
+                <p>{runtime} min</p>
+                <p>{genres}</p>
+                <p>{director}</p>
+            </div>
         </div>
     );
 

@@ -39,7 +39,7 @@ const Navbar = () => {
                 </ul>
             )}
 
-            <button onClick={toggleNav} className={classes.btn}><i className="fas fa-bars fa-2x"></i></button>
+            <button onClick={toggleNav} className={classes.btn}>{!toggleMenu ? <i className="fas fa-bars fa-2x"></i> : <i class="fas fa-times fa-2x"></i>}</button>
         </nav>
     )
 }
