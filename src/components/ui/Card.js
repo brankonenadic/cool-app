@@ -4,7 +4,7 @@ import classes from './Card.module.css'
 const Card = ({ id, title, year, image, runtime, genres, director, actors, plot }) => {
 
     const [seeMore, setSeeMore] = useState(false)
-    const seeMoreHandler = (id) => {
+    const seeMoreHandler = () => {
         setSeeMore(!seeMore)
     }
     let buttonText;

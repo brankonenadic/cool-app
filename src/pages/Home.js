@@ -26,7 +26,8 @@ const Home = () => {
 
     return (
         <div className={classes.wrapper}>
-            <h1>Home Page</h1>
+            <div className={classes.headerDiv}><h1>Movie List</h1></div>
+            
             <div className={classes.home}>
                 {theMovie}
             </div>
